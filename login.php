@@ -39,10 +39,10 @@
    $password = hash('sha256', $pass);
   
    //$res=mysql_query("SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
-   $res=mysql_query($success, "SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
+   $res=mysqli_query($success, "SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
    
-   $row=mysql_fetch_array($res);
-   $count = mysql_num_rows($res);
+   $row=mysqli_fetch_array($res);
+   $count = mysqli_num_rows($res);
    
    if( $count == 1 && $row['userPass']==$password ) {
     $_SESSION['user'] = $row['userId'];
