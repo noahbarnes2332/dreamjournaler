@@ -4,9 +4,9 @@
  error_reporting( ~E_DEPRECATED & ~E_NOTICE );
  // but I strongly suggest you to use PDO or MySQLi.
  
- define('DBHOST', 'localhost');
- define('DBUSER', 'root');
- define('DBPASS', '');
+ define('DBHOST', 'us-cdbr-iron-east-05.cleardb.net');
+ define('DBUSER', 'b8466cae527cb9');
+ define('DBPASS', '245049d3');
  define('DBNAME', 'dreamJournaler');
  
  $conn = mysql_connect(DBHOST,DBUSER,DBPASS);
