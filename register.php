@@ -74,7 +74,8 @@
   if( !$error ) {
    
    $query = "INSERT INTO users(userFirstName,userLastName,userEmail,userPass) VALUES('$firstName','$lastName','$email','$password')";
-   $res = mysqli_query($link, $query);
+   $con = getConnection();
+   $res = mysqli_query($con, $query);
     
    if ($res) {
     $errTyp = "success";
