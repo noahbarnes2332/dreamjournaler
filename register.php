@@ -53,8 +53,8 @@
    $emailError = "Please enter valid email address.";
   } else {
    $query = "SELECT userEmail FROM users WHERE userEmail='$email'";
-   $result = mysql_query($query);
-   $count = mysql_num_rows($result);
+   $result = mysqli_query($query);
+   $count = mysqli_num_rows($result);
    if($count!=0){
     $error = true;
     $emailError = "Provided Email is already in use.";
@@ -74,7 +74,7 @@
   if( !$error ) {
    
    $query = "INSERT INTO users(userFirstName,userLastName,userEmail,userPass) VALUES('$firstName','$lastName','$email','$password')";
-   $res = mysql_query($query);
+   $res = mysqli_query($query);
     
    if ($res) {
     $errTyp = "success";
