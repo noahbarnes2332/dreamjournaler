@@ -74,7 +74,7 @@
   if( !$error ) {
    
    $query = "INSERT INTO users(userFirstName,userLastName,userEmail,userPass) VALUES('$firstName','$lastName','$email','$password')";
-   $con = getConnection();
+   $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
    $res = mysqli_query($con, $query);
     
    if ($res) {
