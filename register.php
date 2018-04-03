@@ -33,12 +33,12 @@
   }else if (empty($lastName)) {
    $error = true;
    $lastNameError = "Please enter your last name.";
-  }else if (strlen($firstName) < 3) {
+  }else if (strlen($firstName) < 2) {
    $error = true;
-   $firstNameError = "First name must have atleat 3 characters.";
-  }else if (strlen($lastName) < 3) {
+   $firstNameError = "First name must have at least 2 characters.";
+  }else if (strlen($lastName) < 2) {
    $error = true;
-   $lastNameError = "Last name must have atleat 3 characters.";
+   $lastNameError = "Last name must have at least 2 characters.";
   }else if (!preg_match("/^[a-zA-Z ]+$/",$firstName)) {
    $error = true;
    $firstNameError = "First name must contain alphabets.";
