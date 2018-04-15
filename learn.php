@@ -19,7 +19,6 @@
   <li class="navbar"><a class="active" href="learn.php">Learn</a></li>
   <li class="navbar"><a href="resources.php">Resources</a></li>
   <li class="navbar"><a href="browse-journals.php">Browse Journals</a></li>
-  <li class="navbar"><a href="help.php">Help</a></li>
   <?php 
   if( !isset($_SESSION['user']) ) {
 	echo '<li class="navbar"><a href="login.php">Login</a></li>';
