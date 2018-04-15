@@ -51,7 +51,7 @@
 				<label for="noise">
 					Make some noise:
 				</label>
-				<textarea id="noise" name="noise" class="widgEditor nothing">&lt;p&gt;widgEditor &lt;strong&gt;automatically&lt;/strong&gt; integrates the content that was in the textarea!&lt;/p&gt;</textarea>
+				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<fieldset class="submit">
 				<input type="submit" value="Check the submitted code" />
