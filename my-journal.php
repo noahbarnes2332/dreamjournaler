@@ -28,6 +28,29 @@
   ?>
 </ul>
 
+<script type="text/javascript" src="scripts/widgEditor.js"></script>
+
+
+<body>
+
+	<div id="content">
+		<h2>
+			widgEditor
+		</h2>
+		<form action="submit.php" onsubmit="alert('Your submitted HTML was:\n\n' + document.getElementById('noise').value); return false;">
+			<fieldset>
+				<label for="noise">
+					Make some noise:
+				</label>
+				<textarea id="noise" name="noise" class="widgEditor nothing">&lt;p&gt;widgEditor &lt;strong&gt;automatically&lt;/strong&gt; integrates the content that was in the textarea!&lt;/p&gt;</textarea>
+			</fieldset>
+			<fieldset class="submit">
+				<input type="submit" value="Check the submitted code" />
+			</fieldset>
+		</form>
+	</div>
+<!-- END content -->
+</body>
 
 
 <div class="footer">
