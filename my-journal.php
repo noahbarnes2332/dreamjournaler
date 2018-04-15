@@ -3,7 +3,7 @@
  session_start();
  require_once 'Dao.php';
  
- if ( isset($_SESSION['user'])!="" ) {
+ if ( !isset($_SESSION['user'])!="" ) {
   header("Location: index.php");
   exit;
  }
