@@ -62,7 +62,7 @@
 
 
 <body>
-
+<div class="form">
 	<div id="content">
 		<h2>
 			Create A New Journal Entry
@@ -81,6 +81,7 @@
 			</fieldset>
 		</form>
 	</div>
+</div>
 </body>
 
 
