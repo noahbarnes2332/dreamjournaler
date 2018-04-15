@@ -10,13 +10,16 @@
  
  $error = false;
  
- if( !$error ) {
+ 
+ if( isset($_POST['btn-enterJ']) ) { 
+    if( !$error ) {
    
-   $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
-   if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-   }
+      $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+      if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	  }
   
+	}
  }
  
  
@@ -73,7 +76,8 @@
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<fieldset class="submit">
-				<input type="submit" value="Save and Submit" />
+				<!--<input type="submit" value="Save and Submit" />-->
+				<button type="submit" name="btn-enterJ">Save and Submit</button>
 			</fieldset>
 		</form>
 	</div>
