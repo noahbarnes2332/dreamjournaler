@@ -28,15 +28,7 @@ div.transbox p {
   color: #000000;
 }
 
-ul {
-    list-style: outside disc;
-    margin-left: 1em;
-}
-ul li {
-    position: relative;
-    left: 1em;
-    padding-right: 1em;    
-}​
+
 
 ul.navbar {
     list-style-type: none;

@@ -22,9 +22,9 @@
   <li class="navbar"><a href="help.php">Help</a></li>
   <?php 
   if( !isset($_SESSION['user']) ) {
-	echo '<li><a href="login.php">Login</a></li>';
+	echo '<li class="navbar"><a href="login.php">Login</a></li>';
 	} else {
-	echo '<li><a href="logout.php?logout">Sign Out</a></li>';
+	echo '<li class="navbar"><a href="logout.php?logout">Sign Out</a></li>';
 	} 
   ?>
 </ul>
