@@ -34,7 +34,7 @@
 <body>
 <div class="background">
 	<div class="transbox1">
-	Test. Text here later. Text here later. Text here later. Text here later. 
+	Test2. Text here later. Text here later. Text here later. Text here later. 
 	Text here later. Text here later. Text here later. Text here later. Text here later. 
 	Text here later. Text here later. Text here later. Text here later. Text here later. 
 	Text here later. Text here later. Text here later. Text here later. Text here later. 
