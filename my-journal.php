@@ -2,6 +2,11 @@
  ob_start();
  session_start();
  require_once 'Dao.php';
+ 
+ if ( isset($_SESSION['user'])!="" ) {
+  header("Location: index.php");
+  exit;
+ }
 ?>
 
 <html>
@@ -51,11 +56,11 @@
 				<label for="noise">
 					
 				</label>
-				<input type="text" name="entryTitle" placeholder="Enter Title Here" maxlength="20"/>
+				<input type="text" name="entryTitle" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<fieldset class="submit">
-				<input type="submit" value="Check the submitted code" />
+				<input type="submit" value="Save and Submit" />
 			</fieldset>
 		</form>
 	</div>
