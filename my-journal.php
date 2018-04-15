@@ -25,7 +25,7 @@
 <script type="text/javascript" src="scripts/widgEditor.js"></script>
 
 </head>
-
+<link rel="stylesheet" href="css/styles.css">
 <body>
 
 <ul class="navbar">
@@ -47,7 +47,7 @@
 
 <body>
 
-	<div id="content">
+	<div id="widgcontent">
 		<h2>
 			widgEditor
 		</h2>
