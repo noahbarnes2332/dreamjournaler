@@ -7,6 +7,19 @@
   header("Location: index.php");
   exit;
  }
+ 
+ $error = false;
+ 
+ if( !$error ) {
+   
+   $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+   if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+   }
+  
+ }
+ 
+ 
 ?>
 
 <html>
@@ -64,7 +77,6 @@
 			</fieldset>
 		</form>
 	</div>
-<!-- END content -->
 </body>
 
 
