@@ -51,7 +51,7 @@
 		<h2>
 			Create A New Journal Entry
 		</h2>
-		<form action="submit.php" onsubmit="alert('Your submitted HTML was:\n\n' + document.getElementById('noise').value); return false;">
+		<form action="submit.php" onsubmit="alert('Your submitted HTML was:\n\n' + document.getElementById('entryTitle').value + document.getElementById('noise').value); return false;">
 			<fieldset>
 				<label for="noise">
 					
