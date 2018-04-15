@@ -47,7 +47,7 @@
 
 <body>
 
-	<div id="content2">
+	<div id="content">
 		<h2>
 			widgEditor
 		</h2>
