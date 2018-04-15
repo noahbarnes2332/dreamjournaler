@@ -44,14 +44,14 @@
 
 	<div id="content">
 		<h2>
-			widgEditor
+			Create A New Journal Entry
 		</h2>
 		<form action="submit.php" onsubmit="alert('Your submitted HTML was:\n\n' + document.getElementById('noise').value); return false;">
 			<fieldset>
 				<label for="noise">
-					Make some noise:
+					
 				</label>
-				<input type="text" name="firstName" placeholder="Enter Title Here" maxlength="20"/>
+				<input type="text" name="entryTitle" placeholder="Enter Title Here" maxlength="20"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<fieldset class="submit">
