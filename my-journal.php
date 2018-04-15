@@ -6,15 +6,15 @@
 
 <html>
 <head>
-  <title>Dream Journaler</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+<title>Dream Journaler</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
   
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-  <meta name="author" content="The Man in Blue" />
-  <meta name="robots" content="all" />
-  <meta name="MSSmartTagsPreventParsing" content="true" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="The Man in Blue" />
+<meta name="robots" content="all" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 
 <style type="text/css" media="all">
 	@import "css/info.css";
@@ -25,7 +25,7 @@
 <script type="text/javascript" src="scripts/widgEditor.js"></script>
 
 </head>
-<link rel="stylesheet" href="css/styles.css">
+
 <body>
 
 <ul class="navbar">
