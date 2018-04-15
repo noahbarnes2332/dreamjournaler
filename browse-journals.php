@@ -9,7 +9,7 @@
   <title>Dream Journaler</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 <body>
 
 <ul class="navbar">
