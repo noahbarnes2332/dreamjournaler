@@ -34,8 +34,24 @@
         <h3>Here Are Some Great Resources For More Information!</h3>  
 		<a class="darkblue" href="https://www.dreamviews.com/induction-techniques/113253-all-day-awareness-dild-tutorial-kingyoshi.html">dreamviews.com</a></li>
         <p>
-            
+            Great website for checking out forums and other people's experiences.  This specific link is a great source of information
+			about the DILD lucid dream technique.
         </p>  
+		
+		<a class="darkblue" href="https://www.psychologytoday.com/us/blog/the-superhuman-mind/201212/lucid-dreaming-and-self-realization">psychologytoday.com</a></li>
+        <p>
+            Overall some good information about lucid dreams and benifits.
+        </p>
+		
+		<a class="darkblue" href="https://vanwinkles.com/how-common-is-lucid-dreaming">vanwinkles.com</a></li>
+        <p>
+            Some interesting statistics about lucid dreaming.
+        </p>
+		
+		<a class="darkblue" href="">dreamviews.com</a></li>
+        <p>
+            
+        </p>
 
 	</div>
 	
