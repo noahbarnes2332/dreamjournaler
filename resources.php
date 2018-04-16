@@ -29,39 +29,15 @@
 </ul>
 
 <div class="background">
-	<div class="transbox1">
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	</div>
-	
-	<div class="transbox1">
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	Text here later. Text here later. Text here later. Text here later. Text here later. 
-	</div>
+	<div id="content">
+		<h1>Resources</h1>
+        <h3>Here Are Some Great Resources For More Information!</h3>  
+		<a href="https://www.dreamviews.com/induction-techniques/113253-all-day-awareness-dild-tutorial-kingyoshi.html">dreamviews.com</a></li>
+        <p>
+            
+        </p>  
+
+</div>
 	
 </div>
 

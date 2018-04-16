@@ -36,7 +36,7 @@
 		<h1>Home</h1>
         <h3>What is Dream Journaler?</h3>
 		<p>
-            Dream Journaler is a free website service that allows you to record your dreams for either private use or to share with others.  Journal entries are kept private unless you would like to share them for others to read.  Anyone is free to browse shared journal entries.  If you would like to write your own, you can register </p><a href="register.php">here</a><p> and begin right away!
+            Dream Journaler is a free website service that allows you to record your dreams for either private use or to share with others.  Journal entries are kept private unless you would like to share them for others to read.  Anyone is free to browse shared journal entries.  If you would like to write your own, you can register for free and begin right away!
 		</p>
         <h3>Why Keep a Dream Journal?</h3>
         <h4>Dream Memory</h4>
