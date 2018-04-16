@@ -67,18 +67,12 @@
 <body>
 
 
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit" name="submit" value="submit">
-</form>
-
-
 	<div id="content">
 		<h2>
 			Create A New Journal Entry
 		</h2>
-		<form method="post" action="submit.php">
+		<!--<form method="post" action="submit.php">-->
+		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
 			<fieldset>
 				<label for="noise">
 					
