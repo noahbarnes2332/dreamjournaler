@@ -78,7 +78,7 @@
 				<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
-			<input type="checkbox" name="publicBool" value="0"> Make Entry Public<br>
+			<input type="checkbox" name="publicBool"> Make Entry Public<br>
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
 	</div>
