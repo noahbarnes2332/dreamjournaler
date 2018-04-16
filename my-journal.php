@@ -63,7 +63,7 @@
 
 
 <body>
-	<div class="ib twoThirds">
+	<div class="ib">
 		<h2>
 			Create A New Journal Entry
 		</h2>
@@ -79,7 +79,7 @@
 		</form>
 	</div>
 	
-	<div class="ib oneThird">
+	<div class="ib">
 		<h2>
 			View Journal Entries
 		</h2>

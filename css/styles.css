@@ -1,6 +1,8 @@
 body {
     background-image: url("../images/background.jpg");
     background-repeat: repeat-y;
+	overflow: auto;
+	margin: auto;
 }
 
 div.background {
