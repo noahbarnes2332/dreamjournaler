@@ -32,7 +32,7 @@
 	<div id="content">
 		<h1>Resources</h1>
         <h3>Here Are Some Great Resources For More Information!</h3>  
-		<a href="https://www.dreamviews.com/induction-techniques/113253-all-day-awareness-dild-tutorial-kingyoshi.html">dreamviews.com</a></li>
+		<a class="darkblue" href="https://www.dreamviews.com/induction-techniques/113253-all-day-awareness-dild-tutorial-kingyoshi.html">dreamviews.com</a></li>
         <p>
             
         </p>  
