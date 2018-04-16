@@ -66,7 +66,7 @@
 
 
 <body>
-	<div id="content" class="editor">
+	<div id="content" class="editor ib">
 		<h2>
 			Create A New Journal Entry
 		</h2>
@@ -86,7 +86,7 @@
 		</form>
 	</div>
 	
-	<div id="content">
+	<div id="content" class="ib">
 		<h2>
 			View Journal Entries
 		</h2>
