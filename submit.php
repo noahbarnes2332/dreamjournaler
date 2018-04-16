@@ -7,8 +7,10 @@
 	echo $_POST['title'];
 	echo $_POST['noise'];
 	
-	$Title = $_Post['title'];
-	$Entry = $_Post['noise'];
+	$values = $_POST;
+	
+	$Title = $_Post[0];
+	$Entry = $_Post[1];
 	
 	echo "foo is $Title";
 	
