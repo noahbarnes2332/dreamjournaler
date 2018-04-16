@@ -39,6 +39,7 @@
   
    //$res=mysql_query("SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
    $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+   echo $email;
    $res=mysqli_query($con, "SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
    
    $row=mysqli_fetch_array($res);
