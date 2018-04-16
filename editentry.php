@@ -14,7 +14,7 @@
 	 
 	 
 	 //$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
-	 $query = "UPDATE entries SET (title,summary) VALUES ('$title','$entry')";
+	 $query = "UPDATE entries SET title = $title, summary = $summary WHERE id = $var_id";
      $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
      $res = mysqli_query($con, $query);
 	 mysqli_close($con);
@@ -32,7 +32,7 @@
  $res = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
  $row=mysqli_fetch_array($res);
  $var_summary = $row['summary'];
- 
+ $var_id = $row['id'];
 ?>
 
 <!DOCTYPE html>
