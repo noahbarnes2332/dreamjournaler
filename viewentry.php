@@ -2,8 +2,8 @@
  ob_start();
  session_start();
  require_once 'Dao.php';
- $var_title = $_SESSION['titlevar'];
- $var_summary = $_SESSION['summaryvar'];
+ //$var_title = $_SESSION['titlevar'];
+ $var_title = $_GET['page_name'];
 ?>
 
 <!DOCTYPE html>

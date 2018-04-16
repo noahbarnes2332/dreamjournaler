@@ -116,9 +116,8 @@
 
 		while($row = mysqli_fetch_array($result))
 		{
-			echo "<a href='viewentry.php'>" . $row['title'] . "</a><br />";
-			$_SESSION['titlevar'] = $row['title'];
-			$_SESSION['summaryvar'] = $row['summary'];
+			echo "<a href='viewentry.php?page_name=<?php echo $row['title']; ?>'><br />";
+			//$_SESSION['titlevar'] = $row['title'];
 		}
 
 		mysqli_close($con);
