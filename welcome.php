@@ -7,6 +7,7 @@
 
 if (isset($_POST['submit'])) {  
 
+print_r($_POST);
 $my_post = $_POST;
 
 $Title = $_Post['name'];
