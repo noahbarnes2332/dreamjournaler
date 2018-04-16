@@ -96,8 +96,8 @@
 		{
 			echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
-
-		$result = mysqli_query($con,"SELECT * FROM entries WHERE userId='$_SESSION["user"]' ");
+		$uId = $_SESSION['user'];
+		$result = mysqli_query($con,"SELECT * FROM entries WHERE userId='$uId' ");
 
 
 		while($row = mysqli_fetch_array($result))
