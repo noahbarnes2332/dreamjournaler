@@ -30,33 +30,30 @@
 <link rel="stylesheet" href="css/styles.css">
 <body>
 
-<ul class="navbar">
-  <li class="navbar"><img src="logo/logo.png" height="42" width="42"></li>
-  <li class="navbar"><a href="index.php">Home</a></li>
-  <li class="navbar"><a class="active" href="my-journal.php">My Journal</a></li>
-  <li class="navbar"><a href="learn.php">Learn</a></li>
-  <li class="navbar"><a href="resources.php">Resources</a></li>
-  <li class="navbar"><a href="browse-journals.php">Browse Journals</a></li>
-  <?php 
-  if( !isset($_SESSION['user']) ) {
-	echo '<li class="navbar"><a href="login.php">Login</a></li>';
-	} else {
-	echo '<li class="navbar"><a href="logout.php?logout">Sign Out</a></li>';
-	} 
-  ?>
-</ul>
+<style type="text/css" media="all">
+	@import "css/info.css";
+	@import "css/main.css";
+	@import "css/widgEditor.css";
+</style>
 
+<script type="text/javascript" src="scripts/widgEditor.js"></script>
 
 
 <div id="content">
-	<?php
-		echo "<h2>" . $var_title . "</h2>";
-		echo $var_summary;
-	?>
-	<form action='editentry.php?id=$var_title'>
-    <input type="submit" value="Edit Entry" />
-	</form>
-</div>
+		<h2>
+			Edit Journal Entry
+		</h2>
+		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+			<fieldset>
+				<label for="noise">
+					
+				</label>
+				<input type="text" name="title" value=$var_title maxlength="50"/>
+				<textarea id="noise" name="noise" value=$var_summary class="widgEditor nothing"></textarea>
+			</fieldset>
+			<button type="submit" name="btn-submit">Save and Submit</button>
+		</form>
+	</div>
 
 
 <div class="footer">

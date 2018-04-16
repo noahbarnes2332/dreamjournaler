@@ -28,11 +28,11 @@
 
 <html>
 <head>
-<title>Dream Journaler</title>
+<title>My Journal</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
   
 
-
+<!--
 <style type="text/css" media="all">
 	@import "css/info.css";
 	@import "css/main.css";
@@ -40,7 +40,7 @@
 </style>
 
 <script type="text/javascript" src="scripts/widgEditor.js"></script>
-
+-->
 </head>
 <link rel="stylesheet" href="css/styles.css">
 <body>
