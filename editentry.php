@@ -53,7 +53,11 @@
 			</fieldset>
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
-	</div>
+		<?php
+		echo $var_title;
+		echo $var_summary;
+		?>
+</div>
 
 
 <div class="footer">
