@@ -53,10 +53,10 @@
 	<?php
 		echo "<h2>" . $var_title . "</h2>";
 		echo $var_summary;
-		$hello = "Cattest";
+		settype($var_title, "string");
 	?>
 	<form action="editentry.php" method="post">
-	  <input type="text" value="<?php echo $hello?>" name="varTitle" />
+	  <input type="text" value="<?php echo $var_title?>" name="varTitle" />
       <input type="submit" value="Edit Entry" />
 	</form>
 </div>
