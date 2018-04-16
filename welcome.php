@@ -7,6 +7,8 @@
 
 if (isset($_POST['submit'])) {  
 
+$post_body = file_get_contents('php://input');
+print_r($post_body);
 print_r($_POST);
 //$my_post = $_POST;
 
