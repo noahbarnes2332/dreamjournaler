@@ -7,6 +7,13 @@
 
 if (isset($_POST['submit'])) {  
 
+$post = file_get_contents("php://input");
+echo "\n";
+
+var_dump($post);
+echo "\n";
+
+
 $title = $_Post['name'];
 var_dump($title);
 echo "\n";
