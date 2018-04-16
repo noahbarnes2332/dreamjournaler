@@ -18,6 +18,7 @@
  $res = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
  $row=mysqli_fetch_array($res);
  $var_summary = $row['summary'];
+ $var_id = $row['id'];
  
 ?>
 
@@ -52,6 +53,7 @@
 	<?php
 		echo "<h2>" . $var_title . "</h2>";
 		echo $var_summary;
+		echo $var_id;
 	?>
 	<form action="editentry.php" method="post">
 	  <input type="hidden" value="<?php echo $var_title?>" name="varTitle" />
