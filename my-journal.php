@@ -65,6 +65,23 @@
 <body>
 	
 	<div id="content">
+		<div style="display: inline-block">
+			<h2>
+				Create A New Journal Entry
+			</h2>
+			<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+				<fieldset>
+					<label for="noise">
+					
+					</label>
+					<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
+					<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
+				</fieldset>
+				<button type="submit" name="btn-submit">Save and Submit</button>
+			</form>
+		</div>
+		
+		<div style="display: inline-block">
 		<h2>
 			View Journal Entries
 		</h2>
@@ -91,7 +108,7 @@
 
 		mysqli_close($con);
 		?>
-		
+		</div>
 		
 	</div>
 	

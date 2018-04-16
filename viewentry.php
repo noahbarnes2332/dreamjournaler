@@ -56,7 +56,7 @@
 	?>
 	<form action="editentry.php" method="post">
 	  <input type="hidden" value="<?php echo $var_title?>" name="varTitle" />
-      <input type="submit" value="Edit Entry" />
+      <!--<input type="submit" value="Edit Entry" />-->
 	</form>
 </div>
 
