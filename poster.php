@@ -14,8 +14,8 @@
 
 
 <form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
+Name: <input type="text" id="name" name="name"><br>
+E-mail: <input type="text" id="email" name="email"><br>
 <input type="submit" name="submit" value="submit">
 </form>
 
