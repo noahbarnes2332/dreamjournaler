@@ -18,7 +18,6 @@
  $res = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
  $row=mysqli_fetch_array($res);
  $var_summary = $row['summary'];
- $var_title = $row['title'];
  
 ?>
 
