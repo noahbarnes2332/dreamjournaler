@@ -53,7 +53,7 @@
 		echo "<h2>" . $var_title . "</h2>";
 		echo $var_summary;
 	?>
-	<form action='editentry.php?id=$var_title'>
+	<form action='editentry.php?id=<?php echo $var_title; ?>'>
     <input type="submit" value="Edit Entry" />
 	</form>
 </div>
