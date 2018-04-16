@@ -6,6 +6,8 @@
 	$Title = $_Post['title'];
 	$Entry = $_Post['noise'];
 	
+	echo $Title;
+	
 	$sql = "INSERT INTO entries (title,summary) VALUES ('$Title','$Entry')";
 	
 	if(!mysqli_query($con,$sql)){
