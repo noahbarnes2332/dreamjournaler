@@ -24,7 +24,7 @@
 	 $public = 1;
 	 
 	 $query = "INSERT INTO entries (title,summary,madePublic,userId) VALUES ('$title','$entry','$public','$userID')";
-	 //$res = mysqli_query($con, $query);
+	 $res2 = mysqli_query($con, $query);
 	 mysqli_close($con);
  }
  
