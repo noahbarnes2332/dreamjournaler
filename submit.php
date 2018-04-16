@@ -3,11 +3,13 @@
 	if(!$con){
 		echo 'Not Connected To Server';
 	}
+	
+	echo $_POST["title"];
+	echo $_POST["noise"];
+	
 	$Title = $_Post["title"];
 	$Entry = $_Post["noise"];
 	
-	echo $_POST["email"];
-	echo $_POST["name"];
 	echo "foo is $Title";
 	
 	$sql = "INSERT INTO entries (title,summary) VALUES ('$Title','$Entry')";
