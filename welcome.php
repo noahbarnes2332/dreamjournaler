@@ -10,8 +10,8 @@ if (isset($_POST['submit'])) {
 print_r($_POST);
 $my_post = $_POST;
 
-$title = $_Post['name'];
-$entry = $_Post['email'];
+$title = trim($_Post['name']);
+$entry = trim($_Post['email']);
 
 print_r($title);
 print_r($entry);
