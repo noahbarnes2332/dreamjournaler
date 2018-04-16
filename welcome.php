@@ -10,16 +10,16 @@ if (isset($_POST['submit'])) {
 print_r($_POST);
 $my_post = $_POST;
 
-$Title = $_Post['name'];
-$Entry = $_Post['email'];
-echo $Title;
-echo $Entry;
+$title = $_Post['name'];
+$entry = $_Post['email'];
+echo $title;
+echo $entry;
 
 $str = "Hello world!";
 echo $str;
 
-$testTitle = my_post['name'];
-echo $testTitle;
+$testtitle = my_post['name'];
+echo $testtitle;
 
 }
 
