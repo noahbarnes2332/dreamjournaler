@@ -53,7 +53,6 @@
 	<?php
 		echo "<h2>" . $var_title . "</h2>";
 		echo $var_summary;
-		settype($var_title, "string");
 	?>
 	<form action="editentry.php" method="post">
 	  <input type="text" value="<?php echo $var_title?>" name="varTitle" />
