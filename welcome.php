@@ -8,7 +8,7 @@
 if (isset($_POST['submit'])) {  
 
 $title = $_Post['name'];
-print_r($title);
+var_dump($title);
 echo "\n";
 print_r($_POST);
 
