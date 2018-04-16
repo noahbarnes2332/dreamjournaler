@@ -12,8 +12,11 @@
 	 $title = $_POST['title'];
 	 $entry = $_Post['noise'];
 	 
-	 $sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
-	
+	 //$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
+	 $query = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
+   $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+   $res = mysqli_query($con, $query);
+   
 	if(!mysqli_query($con,$sql)){
 		echo 'not inserted';
 	}
