@@ -12,6 +12,11 @@ $my_post = $_POST;
 
 $title = $_Post['name'];
 $entry = $_Post['email'];
+
+print_r($title);
+print_r($entry);
+
+
 echo $title;
 echo $entry;
 
