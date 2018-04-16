@@ -28,6 +28,34 @@
   ?>
 </ul>
 
+
+		
+		<?php
+		
+		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+		if (mysqli_connect_errno())
+		{
+			echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+		$uId = $_SESSION['user'];
+		$result = mysqli_query($con,"SELECT * FROM entries WHERE madePublic='1' ");
+
+
+		while($row = mysqli_fetch_array($result))
+		{
+			echo '<div id="content">';
+			
+			$titlevar = $row['title'];
+			echo "<a href='viewentry.php?id=$titlevar'>$titlevar</a><br></br>";
+			
+			echo '</div>';
+		}
+
+		mysqli_close($con);
+		?>
+
+
+
 <div class="footer">
   <span> 2018 Noah Barnes<span>
 </div>
