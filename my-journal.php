@@ -62,13 +62,32 @@
 
 
 <body>
+	
+	<div id="content">
+		<h2>
+			View Journal Entries
+		</h2>
+		<?php 
+		$query = "SELECT * FROM entries"; //You don't need a ; like you do in SQL
+		$result = mysql_query($query);
 
+		echo "<table>"; // start a table tag in the HTML
 
+		while($row = mysql_fetch_array($result)){   //Creates a loop to loop through results
+			echo "<tr><td>" . $row['title'] . "</td><td>" . $row['summary'] . "</td></tr>";  //$row['index'] the index here is a field name
+		}
+
+		echo "</table>"; //Close the table in HTML
+		?>
+	</div>
+	
+	
+	
+	<!--
 	<div id="content">
 		<h2>
 			Create A New Journal Entry
 		</h2>
-		<!--<form method="post" action="submit.php">-->
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
 			<fieldset>
 				<label for="noise">
@@ -77,10 +96,10 @@
 				<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
-			<!--<input type="submit"/>-->
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
 	</div>
+	-->
 </body>
 
 
