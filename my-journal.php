@@ -78,7 +78,7 @@
 					
 				</label>
 				<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
-				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
+				<textarea type="text" id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<!--<input type="submit"/>-->
 			<button type="submit" name="btn-submit">Save and Submit</button>
