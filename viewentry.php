@@ -2,6 +2,13 @@
  ob_start();
  session_start();
  require_once 'Dao.php';
+ 
+ if ( !isset($_SESSION['user'])!="" ) {
+  header("Location: index.php");
+  exit;
+ }
+ 
+ 
  //$var_title = $_SESSION['titlevar'];
  $var_title = $_GET['id'];
 ?>
