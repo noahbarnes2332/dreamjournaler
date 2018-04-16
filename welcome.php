@@ -7,15 +7,11 @@
 
 if (isset($_POST['submit'])) {  
 
-print_r($_POST);
-$my_post = $_POST;
+//print_r($_POST);
+//$my_post = $_POST;
 
-$title = trim($_Post['name']);
-$entry = trim($_Post['email']);
-
-print_r($title);
-print_r($entry);
-
+$title = $_Post['name'];
+$entry = $_Post['email'];
 
 echo $title;
 echo $entry;
