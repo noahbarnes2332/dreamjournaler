@@ -92,8 +92,12 @@ a {
 	display: inline-block;
 }
 
-.float {
-	float: left;
+.twoThirds {
+  width: %66
+}
+
+.oneThird {
+  width: %34
 }
 
 .active {
