@@ -15,7 +15,7 @@
  }
 
  $var_title = $_GET['id'];
- $var_summary = mysqli_query($con,"SELECT summary FROM entries WHERE title=$var_title");
+ $var_summary = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
  
  
 ?>
