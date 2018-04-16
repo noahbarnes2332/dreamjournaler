@@ -97,12 +97,8 @@ a {
   display: inline-block;
 }
 
-.twoThirds {
-  width: %60;
-}
-
-.oneThird {
-  width: %30;
+.editor {
+  width: 200%;
 }
 
 .active {
