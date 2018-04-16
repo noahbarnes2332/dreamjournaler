@@ -6,7 +6,7 @@
 	$Title = $_Post['title'];
 	$Entry = $_Post['noise'];
 	
-	echo $Title;
+	echo "foo is $Title";
 	
 	$sql = "INSERT INTO entries (title,summary) VALUES ('$Title','$Entry')";
 	
