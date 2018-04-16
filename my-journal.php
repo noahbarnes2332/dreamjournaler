@@ -60,11 +60,8 @@
 				<input type="text" name="title" id="title" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
+			<input type="submit" value="Save and Submit" />
 		</form>
-		<fieldset class="submit">
-				<input type="submit" value="Save and Submit" />
-				<!--<button type="submit" name="btn-enterJ">Save and Submit</button>-->
-		</fieldset>
 	</div>
 </body>
 
