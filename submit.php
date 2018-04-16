@@ -13,7 +13,7 @@
 	
 	echo "foo is $Title";
 	
-	$sql = "INSERT INTO entries (title,summary) VALUES ('$Title','$Entry')";
+	$sql = "INSERT INTO entries (title,summary) VALUES ('$_POST['title']','$_POST['noise']')";
 	
 	if(!mysqli_query($con,$sql)){
 		echo 'not inserted';
