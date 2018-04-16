@@ -20,6 +20,7 @@
 	 $query = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
      $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
      $res = mysqli_query($con, $query);
+	 mysqli_close($con);
  }
  
  
@@ -67,18 +68,32 @@
 		<h2>
 			View Journal Entries
 		</h2>
-		<?php 
+		<?php
 		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
-		$query = "SELECT * FROM entries"; //You don't need a ; like you do in SQL
-		$result = mysql_query($query);
-
-		echo "<table>"; // start a table tag in the HTML
-
-		while($row = mysql_fetch_array($result)){   //Creates a loop to loop through results
-			echo "<tr><td>" . $row['title'] . "</td><td>" . $row['summary'] . "</td></tr>";  //$row['index'] the index here is a field name
+		// Check connection
+		if (mysqli_connect_errno())
+		{
+			echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-		echo "</table>"; //Close the table in HTML
+		$result = mysqli_query($con,"SELECT * FROM entries");
+
+		echo "<table border='1'>
+		<tr>
+		<th>Title</th>
+		<th>Summary</th>
+		</tr>";
+
+		while($row = mysqli_fetch_array($result))
+		{
+			echo "<tr>";
+			echo "<td>" . $row['title'] . "</td>";
+			echo "<td>" . $row['summary'] . "</td>";
+			echo "</tr>";
+		}
+		echo "</table>";
+
+		mysqli_close($con);
 		?>
 	</div>
 	
