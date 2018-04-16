@@ -1,6 +1,9 @@
 <?php
-	$var_title = $_SESSION['titlevar'];
-	$var_summary = $_SESSION['summaryvar'];
+ ob_start();
+ session_start();
+ require_once 'Dao.php';
+ $var_title = $_SESSION['titlevar'];
+ $var_summary = $_SESSION['summaryvar'];
 ?>
 
 <!DOCTYPE html>
