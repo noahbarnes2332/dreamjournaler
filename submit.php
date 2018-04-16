@@ -4,11 +4,11 @@
 		echo 'Not Connected To Server';
 	}
 	
-	echo $_POST["title"];
-	echo $_POST["noise"];
+	echo $_POST['title'];
+	echo $_POST['noise'];
 	
-	$Title = $_Post["title"];
-	$Entry = $_Post["noise"];
+	$Title = $_Post['title'];
+	$Entry = $_Post['noise'];
 	
 	echo "foo is $Title";
 	
