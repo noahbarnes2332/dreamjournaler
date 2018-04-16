@@ -16,12 +16,10 @@
      $res=mysqli_query($con, "SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
 	 $userRow=mysqli_fetch_array($res);
 	 
-	 //$userID = $userRow['userId'];
+	 $userID = $userRow['userId'];
 	 $title = $_POST['title'];
 	 $entry = $_POST['noise'];
-	 //$public = $_POST['publicBool'];
-	 $userID = 12;
-	 $public = 1;
+	 $public = $_POST['publicBool'];
 	 
 	 $query = "INSERT INTO entries (title,summary,madePublic,userId) VALUES ('$title','$entry','$public','$userID')";
 	 $res2 = mysqli_query($con, $query);
