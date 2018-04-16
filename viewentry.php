@@ -54,7 +54,7 @@
 		echo "<h2>" . $var_title . "</h2>";
 		echo $var_summary;
 	?>
-	<form action="editentry.php?id=$var_title" method="post">
+	<form action="editentry.php" method="post">
 	  <input type="hidden" value="<?php echo $var_title?>" name="varTitle" />
       <input type="submit" value="Edit Entry" />
 	</form>
