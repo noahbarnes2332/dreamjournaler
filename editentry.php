@@ -13,6 +13,8 @@
  {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
  }
+ 
+ $hello = "Hellow World";
 
  $var_title = $_GET['id'];
  $res = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
@@ -56,6 +58,7 @@
 		<?php
 		echo $var_title;
 		echo $var_summary;
+		echo $hello;
 		?>
 </div>
 
