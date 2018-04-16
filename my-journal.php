@@ -13,7 +13,7 @@
  
  if ( isset($_POST['btn-submit']) ) {
 	 $title = $_POST['title'];
-	 $entry = document.getElementById('noise').value;
+	 $entry = $_POST['noise'];
 	 
 	 
 	 //$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
