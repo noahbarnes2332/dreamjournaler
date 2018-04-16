@@ -8,7 +8,7 @@
 if (isset($_POST['submit'])) {  
 
 $post_body = file_get_contents('php://input');
-echo $post_body['name'];
+echo $post_body[0];
 /*
 print_r($post_body);
 print_r($_POST);
