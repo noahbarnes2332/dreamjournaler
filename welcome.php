@@ -6,7 +6,7 @@ Your email address is: <?php echo $_POST["email"]; ?>
 
 <?php
 
-if (isset($_POST['submit'])) {  
+if (isset($_POST['Submit'])) {  
 
 $Title = $_Post['name'];
 $Entry = $_Post['email'];
