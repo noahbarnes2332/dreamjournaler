@@ -117,7 +117,7 @@
 		while($row = mysqli_fetch_array($result))
 		{
 			$titlevar = $row['title'];
-			echo "<a href='viewentry.php?page_name=<?php echo $titlevar; ?>'><br />";
+			echo "<a href="viewentry.php?id = <?php echo $titlevar ?>&mk=">CLICK</a>"";
 			//$_SESSION['titlevar'] = $row['title'];
 		}
 
