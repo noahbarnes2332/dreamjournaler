@@ -68,6 +68,8 @@
 		<h2>
 			View Journal Entries
 		</h2>
+		<br />
+		
 		<?php
 		/*
 		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
@@ -101,6 +103,7 @@
 		
 		
 		<?php
+		
 		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
 		// Check connection
 		if (mysqli_connect_errno())
@@ -113,7 +116,7 @@
 
 		while($row = mysqli_fetch_array($result))
 		{
-			echo "<h3>" . $row['title'] . "</h3>";
+			echo "<a href='viewentry.php'>" . $row['title'] . "</a>";
 		}
 
 		mysqli_close($con);
