@@ -89,7 +89,9 @@ a {
 }
 
 .ib {
-	display: inline-block;
+  background: white;
+  border: solid red 1px;
+  display: inline-block;
 }
 
 .twoThirds {
