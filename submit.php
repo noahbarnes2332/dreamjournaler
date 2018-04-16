@@ -7,12 +7,12 @@
 	echo $_POST["title"];
 	echo $_POST["noise"];
 	
-	$Title = $_Post["title"];
-	$Entry = $_Post["noise"];
+	var $Title = $_Post["title"];
+	var $Entry = $_Post["noise"];
 	
 	echo "foo is $Title";
 	
-	$sql = "INSERT INTO entries (title,summary) VALUES ($_Post["title"],$_Post["noise"])";
+	$sql = "INSERT INTO entries (title,summary) VALUES ('$Title','$Entry')";
 	
 	if(!mysqli_query($con,$sql)){
 		echo 'not inserted';
