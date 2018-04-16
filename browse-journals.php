@@ -46,7 +46,10 @@
 			echo '<div id="content">';
 			
 			$titlevar = $row['title'];
-			echo "<a href='viewentry.php?id=$titlevar'>$titlevar</a><br></br>";
+			$var_summary = $row['summary'];
+			
+			echo "<h2>" . $var_title . "</h2>";
+			echo $var_summary;
 			
 			echo '</div>';
 		}

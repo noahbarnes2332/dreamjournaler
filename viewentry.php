@@ -52,7 +52,7 @@
 	<?php
 		echo "<h2>" . $var_title . "</h2>";
 		echo $var_summary;
-		echo $var_id;
+		//echo $var_id;
 	?>
 	<form action="editentry.php" method="post">
 	  <input type="hidden" value="<?php echo $var_title?>" name="varTitle" />
