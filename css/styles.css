@@ -95,11 +95,11 @@ a {
 }
 
 .twoThirds {
-  width: %66
+  width: %66;
 }
 
 .oneThird {
-  width: %34
+  width: %34;
 }
 
 .active {
