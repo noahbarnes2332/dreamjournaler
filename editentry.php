@@ -10,11 +10,12 @@
  
   if ( isset($_POST['btn-submit']) ) {
 	 $title = $_POST['title'];
+	 $old_title = $_POST['oldTitle'];
 	 $entry = $_POST['noise'];
 	 
 	 
 	 //$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
-	 $query = "UPDATE entries SET title = $title, summary = $summary WHERE id = $var_id";
+	 $query = "UPDATE entries SET title = $title, summary = $summary WHERE title = $old_title";
      $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
      $res = mysqli_query($con, $query);
 	 mysqli_close($con);
@@ -32,7 +33,6 @@
  $res = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
  $row=mysqli_fetch_array($res);
  $var_summary = $row['summary'];
- $var_id = $row['id'];
 ?>
 
 <!DOCTYPE html>
@@ -62,6 +62,7 @@
 					
 				</label>
 				<input type="text" name="title" value="<?php echo $var_title;?>" maxlength="50"/>
+				<input type="hidden" value="<?php echo $var_title?>" name="oldTitle" />
 				<textarea id="noise" name="noise" class="widgEditor nothing"><?php echo$var_summary;?></textarea>
 			</fieldset>
 			<button type="submit" name="btn-submit">Save and Submit</button>
