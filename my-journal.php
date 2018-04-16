@@ -16,7 +16,7 @@
      $res=mysqli_query($con, "SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
 	 $userRow=mysqli_fetch_array($res);
 	 
-	 $userID = $userRow['userId'];
+	 $userID = $_SESSION['user'];
 	 $title = $_POST['title'];
 	 $entry = $_POST['noise'];
 	 $public = $_POST['publicBool'];
