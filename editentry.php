@@ -50,8 +50,8 @@
 				<label for="noise">
 					
 				</label>
-				<input type="text" name="title" value="<?php echo $var_title?>" maxlength="50"/>
-				<textarea id="noise" name="noise" value="<?php echo $var_summary?>" class="widgEditor nothing"></textarea>
+				<input type="text" name="title" value="<?php echo $var_title;?>" maxlength="50"/>
+				<textarea id="noise" name="noise" value="<?php echo $var_summary;?>" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>

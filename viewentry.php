@@ -54,7 +54,7 @@
 		echo $var_summary;
 	?>
 	<form action="editentry.php" method="post">
-	  <input type="text" value="<?php echo $var_title?>" name="varTitle" />
+	  <input type="hidden" value="<?php echo $var_title?>" name="varTitle" />
       <input type="submit" value="Edit Entry" />
 	</form>
 </div>
