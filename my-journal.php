@@ -52,7 +52,7 @@
 		<h2>
 			Create A New Journal Entry
 		</h2>
-		<form action="submit.php" method="post">
+		<form method="post" action="submit.php">
 			<fieldset>
 				<label for="noise">
 					
