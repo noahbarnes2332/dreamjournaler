@@ -63,7 +63,7 @@
 					
 				</label>
 				<input type="text" name="title" value="<?php echo $var_title;?>" maxlength="50"/>
-				<textarea id="noise" name="noise" value="<?php echo $var_summary;?>" class="widgEditor nothing"></textarea>
+				<textarea id="noise" name="noise" class="widgEditor nothing"><?php echo$var_summary;?></textarea>
 			</fieldset>
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
