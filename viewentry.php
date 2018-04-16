@@ -3,7 +3,7 @@
  session_start();
  require_once 'Dao.php';
  //$var_title = $_SESSION['titlevar'];
- $var_title = $_GET['page_name'];
+ $var_title = $_GET['id'];
 ?>
 
 <!DOCTYPE html>
