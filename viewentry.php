@@ -15,8 +15,8 @@
  }
 
  $var_title = $_GET['id'];
- $var_summary = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
- 
+ $res = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
+ $results = mysql_query($res);
  
 ?>
 
@@ -31,9 +31,9 @@
 
 <div id="content">
 	<?php
-		echo $var_title;
 		echo "<h2>" . $var_title . "</h2>";
-		echo $var_summary;
+		echo $results;
+		var_dump($results);
 	?>
 </div>
 
