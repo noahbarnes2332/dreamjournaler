@@ -21,7 +21,7 @@
 	 $entry = $_POST['noise'];
 	 $public = $_POST['publicBool'];
 	 
-	 $query = "INSERT INTO entries (title,summary,madePublic) VALUES ('$title','$entry','$public','$userID')";
+	 $query = "INSERT INTO entries (title,summary,madePublic,userId) VALUES ('$title','$entry','$public','$userID')";
 	 //$res = mysqli_query($con, $query);
 	 mysqli_close($con);
  }
