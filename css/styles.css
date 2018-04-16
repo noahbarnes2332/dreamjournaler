@@ -88,6 +88,13 @@ a {
 	clear: both;
 }
 
+.ib {
+	display: inline-block;
+}
+
+.float {
+	float: left;
+}
 
 .active {
     background-color: #4286f4;

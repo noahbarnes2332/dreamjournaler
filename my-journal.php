@@ -63,7 +63,7 @@
 
 
 <body>
-	<div id="content" class="float: left">
+	<div id="content" class="ib">
 		<h2>
 			Create A New Journal Entry
 		</h2>
@@ -79,7 +79,7 @@
 		</form>
 	</div>
 	
-	<div id="content" class="float: right">
+	<div id="content" class="ib">
 		<h2>
 			View Journal Entries
 		</h2>
@@ -88,7 +88,6 @@
 		<?php
 		
 		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
-		// Check connection
 		if (mysqli_connect_errno())
 		{
 			echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -101,7 +100,6 @@
 		{
 			$titlevar = $row['title'];
 			echo "<a href='viewentry.php?id=$titlevar'>$titlevar</a><br></br>";
-			//$_SESSION['titlevar'] = $row['title'];
 		}
 
 		mysqli_close($con);
