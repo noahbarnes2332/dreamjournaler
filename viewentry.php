@@ -1,5 +1,6 @@
 <?php
-
+	$var_title = $_SESSION['titlevar'];
+	$var_summary = $_SESSION['summaryvar'];
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +13,9 @@
 <body>
 
 <div id="content">
-	
+	<?php
+		echo $var_title;
+	?>
 </div>
 
 
