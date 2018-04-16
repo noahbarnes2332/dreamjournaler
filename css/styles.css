@@ -90,7 +90,7 @@ a {
 
 .ib {
   background: white;
-  border: solid red 1px;
+  padding: 50px;
   display: inline-block;
 }
 
