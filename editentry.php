@@ -16,7 +16,8 @@
  
  $hello = "Hellow World";
 
- $var_title = $_GET['id'];
+ $var_title = $_POST['varTitle'];
+ //$var_title = $_GET['id'];
  $res = mysqli_query($con,"SELECT summary FROM entries WHERE title='$var_title'");
  $row=mysqli_fetch_array($res);
  $var_summary = $row['summary'];
@@ -55,12 +56,6 @@
 			</fieldset>
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
-		<?php
-		$var = $_POST['varTitle'];
-		echo $var;
-		echo $var_summary;
-		echo $hello;
-		?>
 </div>
 
 
