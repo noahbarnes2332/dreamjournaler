@@ -57,7 +57,7 @@
 				<label for="noise">
 					
 				</label>
-				<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
+				<input type="text" name="title" id="title" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<fieldset class="submit">
