@@ -78,20 +78,9 @@
 
 		$result = mysqli_query($con,"SELECT * FROM entries");
 
-		echo "<table border='1'>
-		<tr>
-		<th>Title</th>
-		<th>Summary</th>
-		</tr>";
-
-		while($row = mysqli_fetch_array($result))
-		{
-			echo "<tr>";
-			echo "<td>" . $row['title'] . "</td>";
-			echo "<td>" . $row['summary'] . "</td>";
-			echo "</tr>";
-		}
-		echo "</table>";
+		
+		echo "<h4>" . $row['title'] . "</h4>";
+		echo $row['summary'];
 
 		mysqli_close($con);
 		?>
