@@ -56,7 +56,8 @@
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
 		<?php
-		echo $var_title;
+		$var = $_POST['varTitle'];
+		echo $var;
 		echo $var_summary;
 		echo $hello;
 		?>
