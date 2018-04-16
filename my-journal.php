@@ -69,6 +69,7 @@
 			View Journal Entries
 		</h2>
 		<?php
+		/*
 		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
 		// Check connection
 		if (mysqli_connect_errno())
@@ -78,12 +79,47 @@
 
 		$result = mysqli_query($con,"SELECT * FROM entries");
 
+		echo "<table border='1'>
+		<tr>
+		<th>Title</th>
+		<th>Summary</th>
+		</tr>";
+
+		while($row = mysqli_fetch_array($result))
+		{
+			echo "<tr>";
+			echo "<td>" . $row['title'] . "</td>";
+			echo "<td>" . $row['summary'] . "</td>";
+			echo "</tr>";
+		}
+		echo "</table>";
+
+		mysqli_close($con);*/
+		?>
 		
-		echo "<h4>" . $row['title'] . "</h4>";
-		echo $row['summary'];
+		
+		
+		
+		<?php
+		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+		// Check connection
+		if (mysqli_connect_errno())
+		{
+			echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+
+		$result = mysqli_query($con,"SELECT * FROM entries");
+
+
+		while($row = mysqli_fetch_array($result))
+		{
+			echo "<h3>" . $row['title'] . "</h3>";
+		}
 
 		mysqli_close($con);
 		?>
+		
+		
 	</div>
 	
 	
