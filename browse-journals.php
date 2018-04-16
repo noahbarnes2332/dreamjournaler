@@ -45,7 +45,7 @@
 		{
 			echo '<div id="content">';
 			
-			$titlevar = $row['title'];
+			$var_title = $row['title'];
 			$var_summary = $row['summary'];
 			
 			echo "<h2>" . $var_title . "</h2>";
