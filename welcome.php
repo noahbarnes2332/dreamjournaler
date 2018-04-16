@@ -9,8 +9,11 @@ if (isset($_POST['submit'])) {
 
 $Title = $_Post['name'];
 $Entry = $_Post['email'];
-echo "name is $Title";
-echo "email is $Entry";
+echo $Title;
+echo $Entry;
+
+$str = "Hello world!";
+echo $str;
 
 }
 
