@@ -8,20 +8,6 @@
   exit;
  }
  
- $error = false;
- 
- 
- if( isset($_POST['btn-enterJ']) ) { 
-    if( !$error ) {
-   
-      $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
-      if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	  }
-  
-	}
- }
- 
  
 ?>
 
@@ -62,26 +48,24 @@
 
 
 <body>
-<div class="form">
 	<div id="content">
 		<h2>
 			Create A New Journal Entry
 		</h2>
-		<form action="submit.php" onsubmit="alert('Your submitted HTML was:\n\n' + document.getElementById('entryTitle').value + document.getElementById('noise').value); return false;">
+		<form action="submit.php" method="post">
 			<fieldset>
 				<label for="noise">
 					
 				</label>
-				<input id="entryTitle" type="text" placeholder="Enter Title Here" maxlength="50"/>
+				<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
 			<fieldset class="submit">
-				<!--<input type="submit" value="Save and Submit" />-->
-				<button type="submit" name="btn-enterJ">Save and Submit</button>
+				<input type="submit" value="Save and Submit" />
+				<!--<button type="submit" name="btn-enterJ">Save and Submit</button>-->
 			</fieldset>
 		</form>
 	</div>
-</div>
 </body>
 
 
