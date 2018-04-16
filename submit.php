@@ -7,10 +7,9 @@
 	echo $_POST['title'];
 	echo $_POST['noise'];
 	
-	$values = $_POST;
 	
-	$Title = $_Post[0];
-	$Entry = $_Post[1];
+	$Title = $_Post['title'];
+	$Entry = $_Post['noise'];
 	
 	echo "foo is $Title";
 	
@@ -23,6 +22,6 @@
 		echo 'inserted';
 	}
 	
-	header("refresh:2; url=index.php");
+	//header("refresh:2; url=index.php");
 	
 ?>
