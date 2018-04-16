@@ -13,6 +13,9 @@ echo "\n";
 var_dump($post);
 echo "\n";
 
+echo $post['name'];
+echo "\n";
+
 
 $title = $_Post['name'];
 var_dump($title);
