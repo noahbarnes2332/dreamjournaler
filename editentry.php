@@ -8,13 +8,24 @@
   exit;
  }
  
+  if ( isset($_POST['btn-submit']) ) {
+	 $title = $_POST['title'];
+	 $entry = $_POST['noise'];
+	 
+	 
+	 //$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
+	 $query = "UPDATE entries SET (title,summary) VALUES ('$title','$entry')";
+     $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+     $res = mysqli_query($con, $query);
+	 mysqli_close($con);
+ }
+ 
  $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
  if (mysqli_connect_errno())
  {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
  }
  
- $hello = "Hellow World";
 
  $var_title = $_POST['varTitle'];
  //$var_title = $_GET['id'];
@@ -40,18 +51,6 @@
 </style>
 
 <script type="text/javascript" src="scripts/widgEditor.js"></script>
-
-
-<div id="content">
-	<?php
-		echo "<h2>" . $var_title . "</h2>";
-		echo $var_summary;
-	?>
-	<form action="editentry.php" method="post">
-	  <input type="hidden" value="<?php echo $var_title?>" name="varTitle" />
-      <input type="submit" value="Edit Entry" />
-	</form>
-</div>
 
 <div id="content">
 		<h2>
