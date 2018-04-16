@@ -8,12 +8,12 @@
 	echo $_POST['noise'];
 	
 	
-	$Title = $_Post['title'];
-	$Entry = $_Post['noise'];
+	$title = $_Post['title'];
+	$entry = $_Post['noise'];
 	
-	echo "foo is $Title";
+	echo $title;
 	
-	$sql = "INSERT INTO entries (title,summary) VALUES ('$Title','$Entry')";
+	$sql = "INSERT INTO 'entries' (title,summary) VALUES ('$title','$entry')";
 	
 	if(!mysqli_query($con,$sql)){
 		echo 'not inserted';
