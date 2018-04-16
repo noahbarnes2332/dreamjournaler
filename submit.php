@@ -3,8 +3,8 @@
 	if(!$con){
 		echo 'Not Connected To Server';
 	}
-	$Title = $_Post['title'];
-	$Entry = $_Post['noise'];
+	$Title = $_Post["title"];
+	$Entry = $_Post["noise"];
 	
 	echo "foo is $Title";
 	
