@@ -12,14 +12,17 @@
  }
  
  if ( isset($_POST['btn-submit']) ) {
+     $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
+     $res=mysqli_query($con, "SELECT userId, userFirstName, userLastName, userPass FROM users WHERE userEmail='$email'");
+	 $userRow=mysqli_fetch_array($res);
+	 
+	 $userID = $userRow['userId'];
 	 $title = $_POST['title'];
 	 $entry = $_POST['noise'];
+	 $public = $_POST['publicBool'];
 	 
-	 
-	 //$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
-	 $query = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
-     $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
-     $res = mysqli_query($con, $query);
+	 $query = "INSERT INTO entries (title,summary,madePublic) VALUES ('$title','$entry','$public','$userID')";
+	 //$res = mysqli_query($con, $query);
 	 mysqli_close($con);
  }
  
@@ -75,6 +78,7 @@
 				<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
+			<input type="checkbox" name="publicBool" value="0"> Make Entry Public<br>
 			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
 	</div>
