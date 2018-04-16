@@ -43,6 +43,17 @@
 
 
 <div id="content">
+	<?php
+		echo "<h2>" . $var_title . "</h2>";
+		echo $var_summary;
+	?>
+	<form action="editentry.php" method="post">
+	  <input type="hidden" value="<?php echo $var_title?>" name="varTitle" />
+      <input type="submit" value="Edit Entry" />
+	</form>
+</div>
+
+<div id="content">
 		<h2>
 			Edit Journal Entry
 		</h2>
