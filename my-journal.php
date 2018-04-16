@@ -8,6 +8,20 @@
   exit;
  }
  
+ if ( isset($_POST['btn-signup']) ) {
+	 $title = $_POST['title'];
+	 $entry = $_Post['noise'];
+	 
+	 $sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
+	
+	if(!mysqli_query($con,$sql)){
+		echo 'not inserted';
+	}
+	else{
+		echo 'inserted';
+	}
+ }
+ 
  
 ?>
 
@@ -69,7 +83,8 @@ E-mail: <input type="text" name="email"><br>
 				<input type="text" name="title" placeholder="Enter Title Here" maxlength="50"/>
 				<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
 			</fieldset>
-			<input type="submit"/>
+			<!--<input type="submit"/>-->
+			<button type="submit" name="btn-submit">Save and Submit</button>
 		</form>
 	</div>
 </body>
