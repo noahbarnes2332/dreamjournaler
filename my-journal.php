@@ -8,7 +8,7 @@
   exit;
  }
  
- if ( isset($_POST['btn-signup']) ) {
+ if ( isset($_POST['btn-submit']) ) {
 	 $title = $_POST['title'];
 	 $entry = $_Post['noise'];
 	 
