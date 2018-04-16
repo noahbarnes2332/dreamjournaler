@@ -15,10 +15,12 @@
 	 
 	 
 	 //$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
-	 $query = "UPDATE entries SET title = $title, summary = $summary WHERE title = $old_title";
+	 $query = "UPDATE entries SET title = $title WHERE title = $old_title";
      $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
      $res = mysqli_query($con, $query);
 	 mysqli_close($con);
+	 
+	 header("Location: my-journal.php");
  }
  
  $con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
