@@ -13,7 +13,7 @@
 	
 	echo $title;
 	
-	$sql = "INSERT INTO 'entries' (title,summary) VALUES ('$title','$entry')";
+	$sql = "INSERT INTO entries (title,summary) VALUES ('$title','$entry')";
 	
 	if(!mysqli_query($con,$sql)){
 		echo 'not inserted';
