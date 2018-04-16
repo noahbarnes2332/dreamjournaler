@@ -68,6 +68,7 @@
 			View Journal Entries
 		</h2>
 		<?php 
+		$con = mysqli_connect("us-cdbr-iron-east-05.cleardb.net","b8466cae527cb9","245049d3","heroku_5346190efdce863");
 		$query = "SELECT * FROM entries"; //You don't need a ; like you do in SQL
 		$result = mysql_query($query);
 
