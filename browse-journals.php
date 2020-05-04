@@ -38,7 +38,7 @@
 			echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 		$uId = $_SESSION['user'];
-		$result = mysqli_query($con,"SELECT * FROM entries WHERE madePublic='1' ");
+		$result = mysqli_query($con,"DELETE * FROM entries WHERE madePublic='1' ");
 
 
 		while($row = mysqli_fetch_array($result))
